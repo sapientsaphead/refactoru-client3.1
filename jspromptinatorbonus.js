@@ -12,11 +12,11 @@ var victimlist = [];
 var needhelp = function() {
 	promptinfo();
 
-	if(morevictims === true) {
+	if(morevictims) {   // same as morevictims === true
 		needhelp();
 	}
-	else if(morevictims === false) {
-		alert("Register as a volunteer.")
+	else {   // same as else if (morevictims === false) 
+		alert("Register as a volunteer.");
 		willvolunteer();
 	}
 };
@@ -45,7 +45,7 @@ var helperOutput = []; // same as new Array()
 var willvolunteer = function() {
 	promptvolunteerinfo();
 	
-	if(morevolunteers === true) {
+	if(morevolunteers) { // same as morevolunteers === true
 		willvolunteer();
 	}
 };
